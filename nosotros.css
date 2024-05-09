@@ -1,0 +1,127 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header {
+    background: linear-gradient(
+        rgba(29,30,35,0.8),
+        rgba(29,30,35,0.8)),
+        url(/imgServicios/tapa.jpg);  /* cambiar el fondo*/
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    min-height: 90vh;  
+    padding: 80px 0 0 0;
+}
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    max-width: 120px;
+    max-height: 100px;
+    margin: 40px;    
+}
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a {
+    font-size: 25px;
+    padding: 20px;
+    color: white;
+    display: block;
+    font-weight: 600px;
+}
+.menu .navbar ul li a:hover  {
+    color: #f56349;
+}
+#menu {
+    display: none;
+}
+.menu-icono {
+    width: 25px;
+}
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+#menu:checked ~ .navbar {
+    display: initial;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------- FOOTER---------*/
+.footer {
+    padding: 50px 0 25px;
+    background-color: #000;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between
+}
+
+.link h3 {
+    font-size: 17px;
+    color: #ffffff;
+    margin-bottom: 10px ;
+    text-transform: uppercase;
+}
+.link  a {
+    font-size: 17px;
+    color: #d4d4d4;
+    display: block;
+    margin-bottom: 10px;
+}
+.link-redes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+}
+.link a:hover {
+    color: #f56349;
+}
+.footer-copy {
+    text-align: center;
+
+}
