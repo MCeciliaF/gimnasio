@@ -1,5 +1,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+/*.anton-regular {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }*/ 
 
 * {
     margin: 0;
@@ -10,21 +16,22 @@
 }
 body {
     font-family: 'Roboto', sans-serif;
+    font-size: 16px;
 }
 
 img {
     max-width: 100%;
 }
 .container {
-    max-width: 1200px;
+    max-width: 1120px;
     margin: 0 auto;
 }
 header {
     background: linear-gradient(
         rgba(29,30,35,0.8),
         rgba(29,30,35,0.8)),
-        url(/imgServicios/tapa.jpg);  /* cambiar el fondo*/
-    background-position: top center;
+        url(/imgNosotros/tapa3.jpg); 
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -32,6 +39,7 @@ header {
     min-height: 90vh;  
     padding: 80px 0 0 0;
 }
+
 .menu {
     position: absolute;
     top: 0;
@@ -56,6 +64,7 @@ header {
     color: white;
     display: block;
     font-weight: 600px;
+    text-decoration: none;
 }
 .menu .navbar ul li a:hover  {
     color: #f56349;
@@ -70,30 +79,133 @@ header {
     cursor: pointer;
     display: none;
 }
-#menu:checked ~ .navbar {
+/*#menu:checked ~ .navbar {
     display: initial;
+}*/
+.header-texto {
+    color: #fff;
+    text-align: center;
+}
+.header-texto h1 {
+    color: #f3ad18e4;
+    font-family: 'bebas Neue' ,sans-serif;    
+    font-size: 65px;
+}
+.header-texto h2  {
+    font-size: 35px;
+}
+.header-texto p {
+    font-size: 18px ;
+    padding: 0 60px;
 }
 
+/*         nosotros - video -----*/
+.nosotros {
+    padding: 40px;
+    background-color: #f8a155;
+    border: 1px solid;
+    box-shadow: 20px 15px 25px  rgb(253, 148, 56) inset;
+    
+}
+.nosotros-content {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
 
+}
+.nosotros-texto {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding: 90px 40px 80px 20px;
+}
+.nosotros-texto  h2 {
+    color: #fff;
+    font-size: 30px;
+    padding-bottom : 20px;
+}
+.nosotros-texto  p {
+    color: #000;
+    font-size: 16px;
+}
+.nosotros-video-content {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
 
+.instructores {    
+    padding: 50px 0;
+    background-color: #5e5d5d;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
+}
+.instructores-content {    
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+.instructores-content h2 {
+    color: #ffffff;
+    padding: 40px 0;
+    font-size: 40px;
+    text-align: center;
+}
+.instructores-content p {
+    font-size: 18px;
+    text-align: center;
+    padding: 0 30px;
+}
+.carousel {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding: 0 30px ;
+}
+.carousel-item h3 {
+    font-size: 20px;
+    color: #f80808ee;
+    font-weight: bold;
+}
+.carousel-item p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000705;
+    background-color: #fff4;
+    border-radius: 10px;
+}
+.inscribite {
+    background-color: #f8a155;
+    height: 250px;
+    padding: 30px 0;
+    text-align: center;
+    border: 1px solid;
+    box-shadow: 20px 15px 25px  rgb(253, 148, 56) inset;
+}
+.inscribite h2 {
+    font-size: 60px;
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+}
+.btn {    
+    display: inline-block;
+    padding: 11px 35px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background: linear-gradient(
+        90deg,
+        rgba(245,99,72,1) 0%,
+        rgba(254,140,32,1) 100%
+    );
+    border-radius: 5px;    
+}
 
 /*-------- FOOTER---------*/
 .footer {
-    padding: 50px 0 25px;
+    padding: 40px 0 10px;
     background-color: #000;
+    height: 220px;
 }
 .footer-content {
     display: flex;
@@ -101,27 +213,359 @@ header {
 }
 
 .link h3 {
-    font-size: 17px;
+    font-size: 18px;
     color: #ffffff;
     margin-bottom: 10px ;
     text-transform: uppercase;
 }
+.link ul {
+    padding: 0;
+}
 .link  a {
-    font-size: 17px;
     color: #d4d4d4;
     display: block;
     margin-bottom: 10px;
+    text-decoration: none;
+    
 }
 .link-redes {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-    
 }
 .link a:hover {
     color: #f56349;
 }
 .footer-copy {
+    color: #fff;
     text-align: center;
-
+    padding-top: 20px 0 10px;
 }
+
+/* -------- media queries -------*/
+
+@media screen and (min-width: 400px) and (max-width: 420px) {
+    .menu {
+        padding: 20px;
+    }
+    .menu label {
+        display: initial;
+    }
+    .menu .navbar {
+        position: absolute;
+        top: 0;
+        right: 100%;
+        right: inherit;
+        background-color: #ff783b;
+        display: none;
+    }
+    .menu .navbar ul li {
+        width: 100%;
+    }
+    .menu .navbar ul li a:hover {
+        color: #191a1f;
+    }
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+    .logo {
+        display: none; 
+    }
+    .header-texto h1{
+        font-size: 30px;
+    }
+    .header-texto h2{
+        font-size: 24px;
+        
+    }
+    .header-texto p{
+        font-size: 14px;
+    }
+    .nosotros-content {
+        height: auto;
+    }
+    .nosotros-texto {
+        height: auto;
+        text-align: center;
+        padding: 10px;
+        grid-column: 1 / -1;
+    }
+    .nosotros-video-content{   
+        grid-column: 1 / -1;
+    }
+    .carousel {
+        grid-column: 1 / -1;
+    }
+    .carousel-item h3 {
+        font-size: 20px;
+    }
+    .carousel-item p  {
+       display: none;
+    }
+    .instructores-content{
+        grid-column: 1 / -1;
+    }
+    .instructores-content h2 {
+        font-size: 24px;
+    }
+
+    .instructores-content p {
+        font-size: 14px;
+    }
+    
+    .inscribite {
+        padding: 20px;
+        height: auto;
+    }
+    .inscribite h2 {
+    font-size: 40px;
+    }
+    .footer {
+        width: 100%;
+        padding: 30px;
+        height: 500px;
+    }
+    .footer-content {
+        flex-direction: column;
+        text-align: center;        
+    }
+    .footer .link-redes {
+        justify-content:  center;
+    }
+    .footer .links {
+        padding: 0 20px;
+    }
+}
+@media screen and (min-width: 420px) and (max-width: 520px) {
+    .menu {
+        padding: 20px;
+    }
+    .menu label {
+        display: initial;
+    }
+    .menu .navbar {
+        position: absolute;
+        top: 0;
+        right: 100%;
+        right: inherit;
+        background-color: #ff783b;
+        display: none;
+    }
+    .menu .navbar ul li {
+        width: 100%;
+    }
+    .menu .navbar ul li a:hover {
+        color: #191a1f;
+    }
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+    .logo {
+        display: none; 
+    }
+    .nosotros-video-content{ 
+        justify-items: center;
+        order: 2;  
+        grid-column: 1 / -1;
+        width: 100%;
+    }
+    video {
+        width: 275px;
+        height: 150px;
+    }
+
+    .nosotros-texto { 
+        width: 100%;
+        order: 1;
+        grid-column: 1 / -1;
+        padding: 20px;
+    }
+    .nosotros-texto h2 { 
+        font-size: 25px;
+        padding: 0;
+    }
+    .nosotros-texto p { 
+        font-size: 14px;
+    }
+    .carousel {
+        grid-column: 1 / -1;
+        order: 1;
+    }
+    .carousel-item h3 {
+        font-size: 20px;
+        padding: 20px;
+    }
+    .instructores {
+    padding: 20px;
+    }
+    .instructores-content{
+        grid-column: 1 / -1;
+        text-rendering: 2;
+    }
+    .instructores-content h2{
+        padding: 20px;
+    }
+    .instructores-content p{
+        font-size: 16px;
+        padding: 10px;
+    }
+    .inscribite h2 {
+        font-size: 30px;
+        padding: 20px;
+    }
+    .footer {
+        width: 100%;
+        padding: 30px;
+        height: 500px;
+    }
+    .footer-content {
+        padding: 0 60px;
+    }
+    .footer-content {
+        flex-direction: column;
+        text-align: center;        
+    }
+    .footer .link-redes {
+        justify-content:  center;
+    }
+}
+@media screen and (min-width: 520px) and (max-width: 820px) {
+    .menu {
+        padding: 20px;
+    }
+    .menu label {
+        display: initial;
+    }
+    .menu .navbar {
+        position: absolute;
+        top: 0;
+        right: 100%;
+        right: inherit;
+        background-color: #ff783b;
+        display: none;
+    }
+    .menu .navbar ul li {
+        width: 100%;
+    }
+    .menu .navbar ul li a:hover {
+        color: #191a1f;
+    }
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+    .logo {
+        display: none; 
+    }
+    .nosotros-video-content{ 
+        justify-items: center;
+        order: 2;  
+        grid-column: 1 / -1;
+    }
+    video {
+        width: 500px;
+    }
+
+    .nosotros-texto { 
+        width: 100%;
+        order: 1;
+        grid-column: 1 / -1;
+        padding: 20px;
+    }
+    .nosotros-texto h2 { 
+        font-size: 25px;
+        padding: 0;
+    }
+    .nosotros-texto p { 
+        font-size: 14px;
+    }
+    .carousel {
+        order: 2;
+        grid-column: 1 / -1;
+       
+    }
+    .carousel-item h3 {
+        font-size: 20px;
+        padding: 20px;
+    }
+    .instructores {
+    padding: 20px;
+    }
+    .instructores-content{
+        order: 1;
+        grid-column: 1 / -1;
+        
+    }
+    .instructores-content h2{
+        padding: 20px;
+    }
+    .instructores-content p{
+        font-size: 16px;
+        padding: 10px;
+    }
+    .inscribite h2 {
+        font-size: 30px;
+        padding: 20px;
+    }
+    .footer {
+        width: 100%;
+        padding: 30px;
+        height: 500px;
+    }
+    .footer-content {
+        padding: 0 60px;
+    }
+    .footer-content {
+        flex-direction: column;
+        text-align: center;        
+    }
+    .footer .link-redes {
+        justify-content:  center;
+    }
+}
+
+
+
+@media screen and (min-width: 820px) and (max-width: 1200px){
+
+    .nosotros-video-content{ 
+        justify-items: center;
+        order: 2;  
+        grid-column: 1 / -1;
+    }
+    video {
+        width: 750px;
+    }
+    .nosotros-texto { 
+        width: 100%;
+        order: 1;
+        grid-column: 1 / -1;
+        padding: 30px;
+    }
+    .nosotros-texto h2 { 
+        font-size: 35px;
+    }
+    .nosotros-texto p { 
+        font-size: 16px;
+    }
+    .carousel {
+        grid-column: 1 / -1;
+    }
+    .carousel-item h3 {
+        font-size: 30px;
+        padding: 20px;
+    }
+
+    .instructores-content{
+        grid-column: 1 / -1;
+    }
+    .instructores-content h2{
+        padding: 20px;
+    }
+    .instructores-content p{
+        font-size: 16px;
+    }
+    .footer-content {
+        padding: 0 60px;
+    }
+}
+
