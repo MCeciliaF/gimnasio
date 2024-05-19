@@ -336,7 +336,7 @@ header {
         padding: 0 20px;
     }
 }
-@media screen and (min-width: 420px) and (max-width: 520px) {
+@media screen and (min-width: 320px) and (max-width: 520px) {
     .menu {
         padding: 20px;
     }
@@ -362,6 +362,15 @@ header {
     }
     .logo {
         display: none; 
+    }
+    .header-texto h1 {
+        font-size: 50px;
+    }
+    .header-texto h2 {
+        font-size: 25px;
+    }
+    .header-texto p {
+        font-size: 14px;
     }
     .nosotros-video-content{ 
         justify-items: center;
@@ -395,6 +404,9 @@ header {
         font-size: 20px;
         padding: 20px;
     }
+    .carousel-item p {
+        display: none;
+    }
     .instructores {
     padding: 20px;
     }
@@ -403,14 +415,18 @@ header {
         text-rendering: 2;
     }
     .instructores-content h2{
+        font-size: 25px;
         padding: 20px;
     }
     .instructores-content p{
-        font-size: 16px;
+        font-size: 14px;
         padding: 10px;
     }
+    .inscribite {
+        padding: 20px;
+    }
     .inscribite h2 {
-        font-size: 30px;
+        font-size: 25px;
         padding: 20px;
     }
     .footer {
@@ -563,6 +579,9 @@ header {
     }
     .instructores-content p{
         font-size: 16px;
+    }
+    .inscribite h2 {
+        font-size: 40px;
     }
     .footer-content {
         padding: 0 60px;
