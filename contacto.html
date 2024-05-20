@@ -4,19 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/1741d0d80d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./contacto.css">
     <title>Contacto</title>
-    <link rel="stylesheet" href="/contacto.css">
-    
 </head>
-
 <body>
     <header class="header">
         <div class="menu container">
-            <a href="#" class="logo"><img src="/imgServicios/fitness-amarillo.png"  alt="logo marca">
+            <a href="#" class="logo"><img src="./imgContacto/fitness-amarillo.png"  alt="logo marca">
             </a>
             <input type="checkbox" id="menu">
             <label  for="menu">
-                <img src="/imgServicios/bars-solid.svg" class="menu-icono" alt="menu">
+                <img src="./imgContacto/menu-regular-24.png" class="menu-icono" alt="menu">
             </label>
         
             <nav class="navbar">
@@ -30,34 +28,227 @@
         </div>
     </header>
     
+    <main>
+        <div class="current-progress">
+            <div class="current-progress-percentage"></div>
+        </div>
+        <div class="Titulo">
+        <h1>VALORAMOS TU GANAS</h1>
+            <p>Hola, queremos agradecerte sinceramente por visitar nuestra página de contacto y considerar formar parte de nuestra familia en FITZONE. <br>
+            <br>Nosotros estamos dedicados a ayudarte a alcanzar tus objetivos de salud y fitness. Nuestro equipo de profesionales está aquí para apoyarte en cada paso del camino, ofreciendo un ambiente motivador y todas las herramientas que necesitas para tener éxito. <br>
+            <br>Si tienes alguna pregunta, no dudes en escribirnos, vamos a asistirte y asegurarnos de que tu experiencia con nosotros sea excepcional desde el primer día. <br>
+            <br>¡Esperamos verte pronto en el gimnasio! <br>
+            Saludos cordiales. <br>
+            
+            El equipo de FITZONE
+        </p>
+    </div>
+    <Section class="Contacto">
+        
+            <div class="contenedorI">
+                <div class="contImagen">
+                    <img src="./imgContacto/fitness-negro.png" width="600px" alt="logo fit zone en negro">
+                </div>
+                <div class="contformulario">
+                    <h2>POR FAVOR COMPLETE EL SIGUIENTE FORMULARIO</h2>
+                    <form>
+                        <label for="nombreapellido">Nombre y Apellido</label>
+                        <input type="text" id="nombreapellido" class="input-padron" required>
     
+                        <label for="correoelectronico">Correo Electronico</label>
+                        <input type="email" id="correoelectronico" class="input-padron" required
+                            placeholder="email@dominio.com">
+    
+                        <label for="telefono">Telefono</label>
+                        <input type="tel" id="telefono" class="input-padron" required placeholder="(XX)XXXXXXXX">
+    
+    
+                        <fieldset>
+                            <legend>¿Cómo le gustaria que lo contactemos?</legend>
+                            <label for="radio-email"><input type="radio" name="contacto" value="email"
+                                    id="radio-email">Email</label>
+                            <label for="radio-telefono"><input type="radio" name="contacto" value="telefono"
+                                    id="radio-telefono">Telefono</label>
+                            <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp"
+                                    id="radio-whatsapp" checked>Whatsapp</label>
+                        </fieldset>
+    
+                        <fieldset>
+                            <legend>¿Está interesado en alguno de nuestros servicios?</legend>
+                            <select id="servicios" name="servicios">
+                                <option value="yoga">Yoga</option>
+                                <option value="pilates">Pilates</option>
+                                <option value="crossfit">Crossfit</option>
+                                <option value="musculacion">Musculación</option>
+                                <option value="karate">Karate</option>
+                                <option value="funcional">Funcional</option>
+                                <option value="todos">Todos</option>
+                            </select>
+                        </fieldset>
+                        
 
+                        <fieldset>
+                            <legend>¿En cual horario prefiere ser antendido?</legend>
+                            <select>
+                                <option>Mañana</option>
+                                <option>Tarde</option>
+                                <option>Noche</option>
+                            </select>
+                        </fieldset>
+    
+                        <label for="mensaje">¿Desea dejarnos algún mensaje?</label>
+                        <textarea cols="10" rows="5" id="mensaje" class="input-padron" required></textarea>
 
+                        <label class="checkbox"><input type="checkbox" checked> ¿Le gustaria recibir información
+                            adicional?</label>
+                        <input type="submit" value="Enviar Formulario" class="enviar">
+                    </form>
+                </div>
+    </Section>
+
+<section class="ubicaciones" >
+    <h1>NUESTRAS UBICACIONES</h1>
+    <div class="container2">
+        <div class="ubicacion">
+            <div class="ubicacionimagen" id="palermo">
+                <img src="./imgContacto/palermo.png" alt="imagenpalermo">
+            </div>
+            <div class="ubicacioncontent">
+                <p>Nos complace anunciar que nuestra sucursal en Palermo ofrece una amplia variedad de áreas de entrenamiento para satisfacer todas sus necesidades. Contamos con: <br><p>
+                    <table>
+                        <tr>
+                            <td><strong>Musculación:</strong></td>
+                            <td>Equipos de última generación para fortalecer y tonificar.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Funcional:</strong></td>
+                            <td>Ejercicios variados para mejorar flexibilidad y resistencia.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Pilates:</strong></td>
+                            <td>Clases que fortalecen y mejoran la postura.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Crossfit:</strong></td>
+                            <td>Entrenamientos de alta intensidad para desafiar sus límites.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Karate:</strong></td>
+                            <td>Arte marcial para fuerza, agilidad y autodefensa.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Yoga:</strong></td>
+                            <td>Espacio para encontrar equilibrio y bienestar.</td>
+                        </tr>
+                    </table>
+                    
+            </div>
+            <div class="map" id="map1"></div>
+        </div>
+        <div class="ubicacion">
+            <div class="ubicacionimagen" id="caballito">
+            <img src="./imgContacto/caballito.png" alt="imagen caballito">
+            </div>
+            <div class="ubicacioncontent">
+                <p>Estamos encantados de anunciar que nuestra sede en Caballito ofrece una variedad excepcional de áreas de entrenamiento: <br></p>
+                <table>
+                    <tr>
+                        <td><strong>Musculación:</strong></td>
+                        <td>Equipos modernos para fortalecer y tonificar.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Crossfit:</strong></td>
+                        <td>Desafíe sus límites con entrenamientos intensos.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Yoga:</strong></td>
+                        <td>Encuentre equilibrio y bienestar.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Pilates:</strong></td>
+                        <td>Mejore su postura y fuerza.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><strong>Además, disfrutamos de un área verde para entrenar al aire libre y conectarse con la naturaleza.</strong></td>
+                    </tr>
+                </table>
+                
+            </div>
+            <div class="map" id="map2"></div>
+        </div>
+        <div class="ubicacion">
+            <div class="ubicacionimagen" id="devoto">
+                <img src="./imgContacto/devoto.png" alt="imagen devoto">
+            </div>
+            <div class="ubicacioncontent">
+                <p>Nuestra sede en Devoto está equipada con una amplia variedad de instalaciones y servicios de primer nivel, entre ellos: <br>
+
+                    <table>
+                        <tr>
+                            <td><strong>Musculación:</strong></td>
+                            <td>Aparatos de última tecnología.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Funcional:</strong></td>
+                            <td>Rutinas variadas para aumentar resistencia.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Pilates:</strong></td>
+                            <td>Sesiones que refuerzan el cuerpo.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Crossfit:</strong></td>
+                            <td>Entrenamientos intensos para llevar su condición física al máximo.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Karate:</strong></td>
+                            <td>Clases de artes marciales que desarrollan fuerza, agilidad y técnicas de defensa.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Yoga:</strong></td>
+                            <td>Espacios dedicados para alcanzar equilibrio y paz interior.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Piscina:</strong></td>
+                            <td>Ideal para natación.</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><strong>Sin duda, nuestra sede cuenta con todos los servicios necesarios para su comodidad y bienestar.</strong></td>
+                        </tr>
+                    </table>
+                </p>
+            </div>
+            <div class="map" id="map3"></div>
+        </div>
+    </div>
+
+</section>
 
 
     
+</main>
     <footer class="footer">
         <div class="footer-content container">
             <div class="link">
                 <ul>
-                    <li><a href="#"><img src="/imgServicios/fitness-amarillo.png" width="120" height="80" alt=""></a></li>
+                    <li><a href="#"><img src="./imgContacto/fitness-amarillo.png" width="120" height="80" alt=""></a></li>
                 </ul>
             </div>
             <div class="link">
                 <h3>SUCURSALES</h3>
                 <ul>
-                    <li><a href="/contacto.html">PALERMO</a></li>
-                    <li><a href="/contacto.html">DEVOTO</a></li>
-                    <li><a href="/contacto.html">CABALLITO</a></li>
+                    <li ><a href="#palermo">Palermo</a></li>
+                    <li ><a href="#devoto">Devoto</a></li>
+                    <li ><a href="#caballito">Caballito</a></li>
                 </ul>
             </div>
             <div class="link">
                 <h3>REDES SOCIALES</h3>
                 <ul class="link-redes">
-                    <li><a class="links" href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a class="links" href="https://twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
-                    <li><a class="links" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a class="links" href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a class="links" href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook fa-lg"></i></a></li>
+                    <li><a class="links" href="https://twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter fa-lg"></i></a></li>
+                    <li><a class="links" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram fa-lg"></i></a></li>
+                    <li><a class="links" href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin fa-lg"></i></a></li>
                 </ul>
             </div>
             <div class="link">
@@ -73,6 +264,16 @@
             <p><small>&copy 2024 <b>Fitzone</b> - Todos los Derechos Reservados</small></p>
         </div>
     </footer>
+
+    <script src="./mapas.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD31ztbSV6Y_bP7b4_3EceXRspOmqQ2fH4&callback=initMap"></script>
+    <script src="./barra.js"></script>
+
 </body>
-    
 </html>
+
+
+
+<!-- <div class="current-progress" style="display: flex; width: 100%;"><div class="current-progress-percentage" style="color: transparent;"></div></div>
+
+ <! AIzaSyD31ztbSV6Y_bP7b4_3EceXRspOmqQ2fH4 clave api

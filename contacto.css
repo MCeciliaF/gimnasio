@@ -1,10 +1,8 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     text-decoration: none;
     list-style: none;
 }
@@ -22,14 +20,14 @@ img {
 header {
     background: linear-gradient(
         rgba(29,30,35,0.8),
-        rgba(29,30,35,0.8)),
-        url(/imgServicios/tapa.jpg);  /* cambiar el fondo*/
+        rgba(34, 29, 35, 0.8)),
+        url(./imgContacto/banner.png);  /* cambiar el fondo*/
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
-    min-height: 90vh;  
+    min-height: 60vh;  
     padding: 80px 0 0 0;
 }
 .menu {
@@ -70,39 +68,6 @@ header {
     cursor: pointer;
     display: none;
 }
-@media screen and (max-width: 720px) {
-    .menu label {
-        display: initial;
-    }
-    .menu .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: inherit;
-        background-color: #ff783b;
-        display: none;
-    }
-    .menu .navbar ul li {
-        width: 100%;
-    }
-    .menu .navbar ul li a:hover {
-        color: #191a1f;
-    }
-    #menu:checked ~ .navbar {
-        display: initial;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -140,4 +105,254 @@ header {
 .footer-copy {
     text-align: center;
 
+}
+
+
+
+/*----CONTACTO----*/
+.Titulo {
+    background: linear-gradient(to bottom, rgb(32, 32, 27), white);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.Titulo h1, .ubicaciones h1 {
+    color: rgba(1, 1, 0.5, 1);
+    text-decoration: underline;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    text-shadow: 2px 2px 5px rgb(255, 189, 89);
+}
+
+.Titulo p, .ubicaciones h1 {
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.Contacto {
+    background: linear-gradient(to bottom, white, rgb(32, 32, 27));
+    padding-bottom: 20px;
+}
+
+.Contacto .contenedorI {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contImagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contImagen img {
+    max-width: 100%;
+    height: auto;
+    padding-left: 30px;
+}
+
+.contformulario {
+    display: grid;
+    gap: 15px;
+    flex-direction: column;
+    border-radius: 10%;
+    background-color: #f9f9f9;
+    padding: 40px;
+    border: 5px solid rgb(255, 189, 89);
+}
+
+.contformulario h2 {
+    text-align: center;
+}
+
+.contformulario form {
+    display: grid;
+    gap: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(255, 189, 89);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+fieldset {
+    margin-bottom: 20px;
+    border: 1px solid rgb(255, 189, 89);
+    border-radius: 5px;
+    padding: 15px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+.enviar {
+    padding: 10px 20px;
+    background-color: rgb(255, 189, 89);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.enviar:hover {
+    background-color: black;
+    color: #d4d4d4;
+}
+
+/*----UBICACIONES----*/
+.ubicaciones {
+    border-top: 30px solid rgb(255, 189, 89);
+    padding-top: 20px;
+}
+
+.container2 {
+    display: grid;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.ubicacion {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 20px;
+    padding: 20px;
+    border-bottom: 10px solid rgb(255, 189, 89);
+}
+
+.ubicacion .ubicacionimagen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ubicacion img {
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+.ubicacioncontent {
+    padding: 10px 20px;
+    text-align: justify;
+}
+
+.ubicacion table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+
+.ubicacion table td {
+    padding: 8px;
+}
+
+.map {
+    width: 250px;
+    height: 200px;
+    border: 1px solid #ddd;
+    padding-top: 250px;
+}
+
+/*la parte responsive*/
+@media (max-width: 768px) {
+    .Contacto .contenedorI {
+        grid-template-columns: 1fr;
+    }
+
+    .ubicacion {
+        grid-template-columns: 1fr;
+    }
+
+    .map {
+        width: 100%;
+        height: 300px;
+    }
+    
+}
+
+@media screen and (max-width: 720px) {
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: inherit;
+        background-color: #ff783b;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    .menu .navbar ul li a:hover {
+        color: #191a1f;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+    .footer {
+        padding: 30px;
+        height: auto;
+    }
+    .footer-content {
+        flex-direction: column;
+        text-align: center; 
+        max-width: 200px;       
+    }
+    .link .link-redes {
+        line-height: 20px;        
+    }
+}
+
+/* Estilo para la barra de progreso */
+.current-progress {
+    background-color: #0e0d0d;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 10px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.current-progress-percentage {
+    background-color: #ff783b;
+    height: 100%;
+    width: 0;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 10px;
+    color: white;
+    font-weight: bold;
+    transition: width 0.1s ease;
 }
