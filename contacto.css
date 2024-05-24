@@ -9,7 +9,9 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 img {
     max-width: 100%;
 }
@@ -29,6 +31,7 @@ header {
     align-items: center;
     min-height: 60vh;  
     padding: 80px 0 0 0;
+    background-attachment: fixed;
 }
 .menu {
     position: absolute;
@@ -77,34 +80,32 @@ header {
     width: 800%;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
-    color: #d4d4d4;
-    font-size: 50px,
-
+    text-align: center;    
+    font-weight: bold;
+    font-size: 28px;  
 }
-.sucursales h2{ 
-    padding: 25px;
-    align-content: center;   
+.sucursales {
+    padding-bottom: 20px;
 }
-.nosotros h2{ 
-    padding: 25px;
-    align-content: center;   
-}
-
-.boton {
-    padding: 10px 15px;
+.sucursales-contacto  a  {  
     background-color: rgb(255, 189, 89);
-    color: #000;
+    color: black;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    
-
+    transition: background-color 0.3s ease;   
+    align-content: center;
+    padding: 0 10px; 
+     
 }
-.boton:hover {
+.sucursales-contacto  a:hover {
     background-color: black;
     color: #d4d4d4;
+}
+.flecha {
+    display: block;
+    padding-left: 90%;
+    
 }
 
 
@@ -327,7 +328,7 @@ legend {
         height: 300px;
     }
     .logo {
-        width: 60px;
+        width: 100px;
     }    
 }
 
@@ -351,6 +352,9 @@ legend {
     }
     #menu:checked ~ .navbar {
         display: initial;
+    }
+    .logo{
+        width: 100px;
     }
     .footer {
         padding: 30px;

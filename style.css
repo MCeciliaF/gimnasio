@@ -72,17 +72,32 @@ header {
   display: none;
 }
 .boton-header {
+  display: inline-block;
+  padding: 11px 35px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: linear-gradient(
+      90deg,
+      rgba(245,99,72,1) 0%,
+      rgba(254,140,32,1) 100%
+  );
+  border-radius: 5px;
+  
+  /*
   border: 2px solid #ff783b;
   border-radius: 4px;
   margin: 30px;
   padding: 10px 35px;
   background-color: transparent;
   color: #ff783b;
-  font-size: 1.2em;
+  font-size: 1.2em;*/
 }
 .boton-header:hover {
+  color: #000;
+  box-shadow: 20px 15px 25px  rgb(253, 148, 56) inset;
+  /*
   color: #d4d4d4;
-  background-color: #f56349;
+  background-color: #f56349;*/
 }
 header .header-title {
   height: 430px;
@@ -101,7 +116,8 @@ header .header-title {
 }
 .header-title p {
   color: #d4d4d4;
-  font-size: 2em;
+  font-size: 18px; /*2rem*/
+  padding-bottom: 20px;
 }
 
 /* Nuestras Instalaciones */

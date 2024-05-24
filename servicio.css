@@ -11,13 +11,15 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 img {
     max-width: 100%;
     height: auto;
 }
 .container {
-    max-width: 1120px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 .header {
@@ -68,30 +70,26 @@ img {
 }
 .menu-icono {
     width: 25px;
+    margin-right: 20px;
 }
 .menu label {
     cursor: pointer;
     display: none;
 }
-#menu:checked ~ .navbar {
-    display: initial;
-}
+
 .header-txt {
     text-align: center;
-    padding: 0 200px;
 }
 .header-txt h1 {
-    color: #f3ad18e4;  
     font-size: 5em;
-    font-weight: bold;
+    color: #ff783b;
 }
 p {
     font-size: 18px;
     color: #d4d4d4;
     margin-bottom: 35px;
 }
-.btn-0 {
-    
+.btn-0 {    
     display: inline-block;
     padding: 11px 35px;
     color: #ffffff;
@@ -164,7 +162,7 @@ hr {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));    
     gap: 15px;
-    width: 90%;
+    width: 70%;
 }
 .servicio .servicio-content .servicio-1 {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -399,16 +397,16 @@ button {
 /* -------- media queries -------*/
 
 @media screen and (min-width: 320px) and (max-width: 755px) {
-    .menu {
+    /*.menu {
         padding: 20px;
-    }
+    }*/
     .menu label {
         display: initial;
     }
     .menu .navbar {
         position: absolute;
-        top: 0;
-        right: 100%;
+        top: 100%;
+        left: 0%;
         right: inherit;
         background-color: #ff783b;
         display: none;
