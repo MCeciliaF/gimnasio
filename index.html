@@ -1,78 +1,417 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/1741d0d80d.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/1741d0d80d.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Inicio</title>
-    <link rel="stylesheet" href="/style.css">
-    
-</head>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-<body>
+  <body>
+    <!-- Inicio Header -->
     <header class="header">
-        <div class="menu container">
-            <a href="#" class="logo"><img src="/imgServicios/fitness-amarillo.png"  alt="logo marca">
-            </a>
-            <input type="checkbox" id="menu">
-            <label  for="menu">
-                <img src="/imgServicios/bars-solid.svg" class="menu-icono" alt="menu">
-            </label>
-        
-            <nav class="navbar">
-                <ul>
-                    <li><a href="/index.html">Inicio</a></li>
-                    <li><a href="/nosotros.html">Nosotros</a></li>
-                    <li><a href="/servicio.html">Servicios</a></li>
-                    <li><a href="/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="menu container">
+        <a href="#" class="logo"
+          ><img
+            src="../imgServicios/fitness-amarillo.png"
+            alt="logo marca"
+          />
+        </a>
+        <input type="checkbox" id="menu" />
+        <label for="menu">
+          <img
+            src="./imgServicios/bars-solid.svg"
+            class="menu-icono"
+            alt="menu"
+          />
+        </label>
+
+        <nav class="navbar">
+          <ul>
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="/nosotros.html">Nosotros</a></li>
+            <li><a href="/servicio.html">Servicios</a></li>
+            <li><a href="/contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-title">
+        <h1>FitZone</h1>
+        <p class="txt-1">
+          "Superá tus límites, transformá tu cuerpo, transformá tu vida."<br />
+          <p class="txt-2" >¡Clases grupales, entrenadores personalizados y maquinaria de alta
+          calidad en nuestro gimnasio! <br />
+          ¡Únete hoy mismo y alcanza tus metas de fitness!</p>
+        </p>
+        <a href="contacto.html" class="boton-header">Unirse</a>
+      </div>
     </header>
-    
-    
+    <!-- Fin Header -->
+<main>
+    <div class="container-service">
+        <!-- Nosotros -->
+        <div class="nosotros-index">
+            <h3 id="nosotros">Quiénes somos</h3>
+            <div class="nosotros-history">
+                <div class="nosotros-interior">
+                    <p class="txt-nosotros">
+                        Un poco de historia
+                        en 1994 el interés que despertaron estas actividades, gestó el proyecto para formar profesionales en dichas áreas, y así fue creado <b>FitZone</b>.
+                        Estes un lugar pensado para que entrenen todos, con programas para todas las edades y orientados al objetivo que querés alcanzar.
 
+                        Olvidate de las rutinas aburridas, vení a entrenar con amigos y sumá más salud a tus días.
+                    </p> 
+                </div>
+                
+            </div>
+            <div class="icon-nosotros">
+                <a href="nosotros.html"><i class="fa-solid fa-plus"></i></a>
+            </div>
+        </div>
+        
+        
 
-
-
-    
-    <footer class="footer">
-        <div class="footer-content container">
-            <div class="link">
-                <ul>
-                    <li><a href="#"><img src="/imgServicios/fitness-amarillo.png" width="120" height="80" alt=""></a></li>
-                </ul>
+        <!-- Inicio galeria instalaciones - slider-->
+        <section>
+          <div class="presentation">
+            <h3>Espacios de nuestro Gimnasio</h3>
+            <p class="txt-2">
+              Nuestros entrenamientos se basan en ayudarte a conseguir tu mejor
+              versión adaptando el entrenamiento a tus necesidades. Cuidamos al
+              máximo las condiciones de todas las salas e instalaciones,
+              garantizando la higiene para crear el mejor ambiente y que te
+              sientas a gusto. A continuación te mostramos nuestras instalaciones.
+            </p>
+          </div>
+          <!-- Galeria Slider-->
+          <div class="slider">
+            <ul>
+              <!--Image 1 Musculación-->
+              <li>
+                <img src="/imgIndex/musculacion.jpg" alt="musculacion" />
+                <div class="texto">
+                  <h2>Musculación</h2>
+                  <p>
+                    En nuestra sala de musculación encontrarás máquinas
+                    suficientes, como para ejercitar cada grupo muscular al menos
+                    de cuatro formas diferentes. Por lo que nunca deberás esperar
+                    para trabajar. Esta variedad nos permite variar de rutina cada
+                    muy poco tiempo, siempre dirigidos por monitores expertos, y
+                    conseguir resultados sorprendentes.
+                  </p>
+                </div>
+              </li>
+              <!-- Image 2 Spinnig x-->
+              <li>
+                <img src="/imgIndex/spinning.jpg" alt="spinnig" />
+                <div class="texto">
+                  <h2>Spinning</h2>
+                  <p>
+                    Estas sesiones combinan entrenamiento aeróbico y anaeróbico
+                    gracias a los cambios de ritmo, lo cual es beneficioso para
+                    nuestro corazón. No podemos dejar de mencionar una acogedora y
+                    bien dotada Sala Cardio con trotadoras, elípticas, bicicletas,
+                    escaladoras en un ambiente separado del resto de las áreas.
+                  </p>
+                </div>
+              </li>
+              <!--Image 3 Funcional -->
+              <li>
+                <img src="/imgIndex/funcional.jpg" alt="funcional" />
+                <div class="texto">
+                  <h2>Funcional</h2>
+                  <p>
+                    A la vanguardia de los tipos de entrenamiento, contamos con
+                    una amplia Sala de Funcionales, en donde podrás entrenarte
+                    para así lograr tu óptima condición física, tanto en las
+                    grupales como en los entrenamientos individuales supervisados
+                    por nuestro equipo de entrenadores.
+                  </p>
+                </div>
+              </li>
+              <!--Image 4 Sala múltiples-->
+              <li>
+                <img src="/imgIndex/98_EQUIPAMIENTO.jpg" alt="sala de múltiples máquinas" />
+                <div class="texto">
+                  <h2>Sala de usos múltiples</h2>
+                  <p>
+                    Entendemos la importancia de un entrenamiento integral. Es por
+                    ello que contamos con clases grupales
+                  </p>
+                </div>
+              </li>
+              <!--Image 5 Yoga-->
+              <li>
+                <img src="/imgIndex/yoga.jpeg" alt="yoga" />
+                <div class="texto">
+                  <h2>Sala de Yoga</h2>
+                  <p>
+                    La práctica de Yoga Integral se realiza de manera controlada,
+                    fluida y con respiraciones conscientes, teniendo como
+                    resultado la liberación de la energía dormida; el cuerpo se
+                    llena de vitalidad y fortaleza, la mente se vuelve ligera,
+                    creativa, alegre y equilibrada.
+                  </p>
+                </div>
+              </li>
+              <!--Image 6 Lockers-->
+              <li>
+                <img src="/imgIndex/locker.webp" alt="lockers" />
+                <div class="texto">
+                  <h2>Lockers</h2>
+                  <p>
+                    En nuestro establecimiento podrás entrenar con tranquilidad
+                    sabiendo que tus pertenencias están seguras.
+                  </p>
+                </div>
+              </li>
+              <!--Image 7 Cafeteria-->
+              <li>
+                <img src="/imgIndex/cafeteria.webp" alt="cafeteria" />
+                <div class="texto">
+                  <h2>Cafeteria - Espacio recreativo</h2>
+                  <p>
+                    FitZone dispone también de un servicio de cafetería,
+                    Planetfood, con vista panorámica a la ciudad.
+                  </p>
+                </div>
+              </li>
+              <!--Image 8 ducha-->
+              <li>
+                <img src="/imgIndex/ducha.jpg" alt="duchas" />
+                <div class="texto">
+                  <h2>Duchas</h2>
+                  <p>En este espacio encontrarás toallas, jabón y todo lo necesario para terminar tu rutina.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!--  Fin galeria instalaciones - slider -->
+  
+        <!-- Inicio Cards servicios-->
+        <section id="servicios">
+          <div class="grupo-servicios" id="service">
+            <div class="service-container">
+              <h2 class="service-title">Servicios</h2>
+              <p class="txt-service">
+                Nuestro gimnasio ofrece una amplia gama de servicios diseñados
+                para ayudarte a alcanzar tus metas <br />
+                de acondicionamiento físico y promover un estilo de vida
+                saludable.
+              </p>
             </div>
-            <div class="link">
-                <h3>SUCURSALES</h3>
-                <ul>
-                    <li><a href="/contacto.html">Palermo</a></li>
-                    <li><a href="/contacto.html">Devoto</a></li>
-                    <li><a href="/contacto.html">Caballito</a></li>
-                </ul>
+            <!-- cards -->
+            <div class="cards-flip">
+              <!-- Card 1 -->
+              <div class="servicio">
+                <div class="face front">
+                  <img
+                    src="/imgIndex/personal.jpg"
+                    alt="Entrenadores del gimnasio"
+                  />
+                  <h3>Nuestro Personal</h3>
+                </div>
+                <div class="face back">
+                  <p>
+                    Contamos con una amplia variedad de profesionales especialistas en
+                    entrenamiento aeróbico, de musculación y más.
+                  </p>
+                  <a href="servicio.html">Más</a>
+                </div>
+              </div>
+  
+              <!-- Card 2 -->
+              <div class="servicio">
+                <div class="face front">
+                  <img
+                    src="/imgIndex/grupales.jpg"
+                    alt="Clase grupal en gimnasio"
+                  />
+                  <h3>Clases grupales</h3>
+                </div>
+                <div class="face back">
+                  <p>
+                    Estas clases pueden incluir
+                    aeróbicos, entrenamiento en circuito, yoga, pilates, zumba,
+                    spinning, entrenamiento de alta intensidad (HIIT), entre
+                    otros.
+                  </p>
+                  <a href="servicio.html">Más</a>
+                </div>
+              </div>
+  
+              <!-- Card 3 -->
+              <div class="servicio">
+                <div class="face front">
+                  <img
+                    src="/imgIndex/personalizado.jpeg"
+                    alt="Entrenador en gimnasio"
+                  />
+                  <h3>Entrenamiento personalizado</h3>
+                </div>
+                <div class="face back">
+                  <p>
+                    Trabajarás con un entrenador certificado
+                    que evaluará tus necesidades y metas, diseñará un programa
+                    personalizado y te brindará 
+                    supervisión durante las sesiones.
+                  </p>
+                  <a href="servicio.html">Más</a>
+                </div>
+              </div>
+  
+              <!-- Card 4 -->
+              <div class="servicio">
+                <div class="face front">
+                  <img
+                    src="/imgIndex/nutricion.webp"
+                    alt="Asesor nutricional en gimnasio"
+                  />
+                  <h3>Asesoramiento nutricional</h3>
+                </div>
+                <div class="face back">
+                  <p>
+                    Nuestro servicio de asesoramiento con profesionales en
+                    nutrición incluye evaluaciones de la dieta, planificación de
+                    comidas y seguimiento regular.
+                  </p>
+                  <a href="servicio.html">Más</a>
+                </div>
+              </div>
             </div>
-            <div class="link">
-                <h3>REDES SOCIALES</h3>
-                <ul class="link-redes">
-                    <li><a class="links" href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook fa-lg"></i></a></li>
-                    <li><a class="links" href="https://twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter fa-lg"></i></a></li>
-                    <li><a class="links" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram fa-lg"></i></a></li>
-                    <li><a class="links" href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin fa-lg"></i></a></li>
-                </ul>
-            </div>
-            <div class="link">
-                <h3>CONTACTO</h3>
-                <ul>
-                    <li><a href="mailto:fitzone@gmail.com"><i class="fa-regular fa-envelope"></i> fitzone@gmail.com</a></li>
-                    <li><a href="https://api.whatsapp.com/send/?phone=__"><i class="fa-brands fa-whatsapp"></i> 011-56912478</a></li>
-                </ul>
-            </div>
+          </div>
+        </section>
+  
+        <!-- Fin Cards servicios -->
+  
+        
+      
+      <!--  -->
+      <!--  -->
+      <!--Inicio cards servicios clases  -->
+      <section class="cards">
+        <h4 id="clases">Nuestras clases</h4>
+        <div class="box-container">
+          <!-- Yoga -->
+          <div class="box">
+            <img src="/imgIndex/yoga2.jpg" alt="yoga" />
+            <h3>Yoga</h3>
             
+            <a href="servicio.html" class="btn">Ver más</a>
+          </div>
+          <!-- Musculación -->
+          <div class="box">
+            <img src="/imgIndex/musculacion1.jpg" alt="musculacion" />
+            <h3>Musculación</h3>
+            
+            <a href="servicio.html" class="btn">Ver más</a>
+          </div>
+          <!-- Crossfit -->
+          <div class="box">
+            <img src="/imgIndex/crossfit-1.jpg" alt="Crossfit" />
+            <h3>Crossfit</h3>
+           
+            <a href="servicio.html" class="btn">Ver más</a>
+          </div>
+          <!-- Funcional -->
+          <div class="box">
+            <img src="/imgIndex/funcional1.jpg" alt="duncional" />
+            <h3>Funcional</h3>
+            
+            <a href="servicio.html" class="btn">Ver más</a>
+          </div>
+          <!-- Taekwondo -->
+          <div class="box">
+            <img src="/imgIndex/taekwondo.jpg" alt="taekwondo" />
+            <h3>Taekwondo</h3>
+            
+            <a href="servicio.html" class="btn">Ver más</a>
+          </div>
+          <!-- Gap -->
+          <div class="box">
+            <img src="/imgIndex/gap1.jpg" alt="Gap" />
+            <h3>Gap</h3>
+            
+            <a href="servicio.html" class="btn">Ver más</a>
+          </div>
         </div>
-        <div class="footer-copy">
-            <p><small>&copy 2024 <b>Fitzone</b> - Todos los Derechos Reservados</small></p>
+      </section>
+    </div>
+</main>
+    <!-- Fin seccion principal -->
+    <!-- Footer-->
+    <footer class="footer">
+      <div class="footer-content container">
+        <div class="link">
+          <ul>
+            <li>
+              <a href="#"
+                ><img
+                  src="/imgServicios/fitness-amarillo.png"
+                  width="120"
+                  height="80"
+                  alt=""
+              /></a>
+            </li>
+          </ul>
         </div>
+        <div class="link">
+          <h3>SUCURSALES</h3>
+          <ul>
+            <li><a href="/contacto.html">Palermo</a></li>
+            <li><a href="/contacto.html">Devoto</a></li>
+            <li><a href="/contacto.html">Caballito</a></li>
+          </ul>
+        </div>
+        <div class="link">
+          <h3>REDES SOCIALES</h3>
+          <ul class="link-redes">
+            <li>
+              <a class="links" href="https://www.facebook.com/" target="_blank"
+                ><i class="fa-brands fa-facebook fa-lg"></i
+              ></a>
+            </li>
+            <li>
+              <a class="links" href="https://twitter.com/" target="_blank"
+                ><i class="fa-brands fa-x-twitter fa-lg"></i
+              ></a>
+            </li>
+            <li>
+              <a class="links" href="https://www.instagram.com/" target="_blank"
+                ><i class="fa-brands fa-instagram fa-lg"></i
+              ></a>
+            </li>
+            <li>
+              <a class="links" href="https://www.linkedin.com/" target="_blank"
+                ><i class="fa-brands fa-linkedin fa-lg"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="link">
+          <h3>CONTACTO</h3>
+          <ul>
+            <li>
+              <a href="mailto:fitzone@gmail.com"
+                ><i class="fa-regular fa-envelope"></i> fitzone@gmail.com</a
+              >
+            </li>
+            <li>
+              <a href="https://api.whatsapp.com/send/?phone=__"
+                ><i class="fa-brands fa-whatsapp"></i> 011-56912478</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-copy">
+        <p><small>&copy 2024 <b>Fitzone</b> - Todos los Derechos Reservados</small></p>
+      </div>
     </footer>
-</body>
-    
+  </body>
 </html>

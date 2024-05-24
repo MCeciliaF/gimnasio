@@ -24,7 +24,7 @@ img {
     background: linear-gradient(
         rgba(29,30,35,0.8),
         rgba(29,30,35,0.8)),
-        url(/imgServicios/tapa.png);
+        url(/imgServicios/tapa.jpg);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -32,6 +32,7 @@ img {
     align-items: center;
     min-height: 90vh;  /*80*/
     padding: 80px 0 0 0;
+    background-attachment: fixed;
 }
 .menu {
     position: absolute;
@@ -72,28 +73,25 @@ img {
     cursor: pointer;
     display: none;
 }
-/*#menu:checked ~ .navbar {
+#menu:checked ~ .navbar {
     display: initial;
-}*/
-
-
+}
 .header-txt {
     text-align: center;
     padding: 0 200px;
 }
 .header-txt h1 {
-    font-size: 65px;
-    line-height: 1;
-    color: #f3ad18e4;
-    font-family: 'bebas Neue' ,sans-serif;
-    
+    color: #f3ad18e4;  
+    font-size: 5em;
+    font-weight: bold;
 }
 p {
-    font-size: 17px;
+    font-size: 18px;
     color: #d4d4d4;
     margin-bottom: 35px;
 }
 .btn-0 {
+    
     display: inline-block;
     padding: 11px 35px;
     color: #ffffff;
@@ -105,7 +103,10 @@ p {
     );
     border-radius: 5px;
 }
-
+.btn-0:hover{
+    color: #000;
+    box-shadow: 20px 15px 25px  rgb(253, 148, 56) inset;
+}
 .about {
     padding: 80px 0;
     background-color: #191a1f;
@@ -241,6 +242,7 @@ button {
 }
 .btn-1::after {
     content: 'mar, jue y vie 10, 15 y 19hs';
+    
 }
 .btn-2::after {
     content: 'mar, jue y sab 9, 11, 18 y 21hs';
@@ -267,13 +269,14 @@ button {
 .btn-4::after,
 .btn-5::after,
 .btn-6::after{
-    width: 150px;
+    width: 180px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
-    font-size: 10px;
-    color: #fff;
+    font-size: 13px;
+    color: #000;
+    font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 5px;
     /*font-weight: 700;
@@ -349,7 +352,7 @@ button {
         rgba(0, 0, 0, 0.7),
         rgba(0, 0, 0, 0.7)
     ),
-    url(/imgServicios/amigos.png);
+    url(/imgServicios/amigos.jpg);
     background-position: top center;
     background-repeat: no-repeat;
     background-size:  cover;
@@ -420,15 +423,21 @@ button {
         display: initial;
     }
     .logo {
-        display: none; 
+        width: 100px; 
     }
     .header {
-    min-height: 50vh; /* ver valores*/
+       min-height: 50vh; /* ver valores*/
        padding: 100px 30px;
     }
-    .header-txt {
+    .header h1 {
+        display: none;
+    }
+    .header-txt {        
         text-align: center;
         padding: 0;
+    }
+    .header-txt h2 {
+        padding: 100px 0 30px;
     }
     .about-content {
         flex-direction: column;
