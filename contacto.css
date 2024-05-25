@@ -370,7 +370,7 @@ legend {
     }
 }
 
-/* Estilo para la barra de progreso */
+/* Estilo para la barra de progreso *//*
 .current-progress {
     background-color: #0e0d0d;
     border-radius: 5px;
@@ -393,4 +393,4 @@ legend {
     color: white;
     font-weight: bold;
     transition: width 0.1s ease;
-}
+}*/
