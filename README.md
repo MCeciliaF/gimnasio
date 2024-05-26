@@ -4,7 +4,7 @@ FITZONE
 Curso codo a codo 2024
 
 Somos la comisión 24139 - Grupo N°18 
-https://github.com/MCeciliaF/gimnasio/blob/master/image-1.png 
+ 
 # Description
 
 Es un proyecto a modo de ejercitación y entrega para el curso dictado por  Codo A Codo 2024 primer semestre Front End.
@@ -50,14 +50,5 @@ Es una página web destinada para el gimnasio FitZone, el cual es un centro depo
 | Example Color | ![#777](https://via.placeholder.com/10/777?text=+) #777 |
 
 
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](https://github.com/use/repository/issues).
-
-## Show your support
-
-Give a ⭐️ if you like this project!
-
 ## Screenshots
+https://github.com/MCeciliaF/gimnasio/blob/master/image-1.png
