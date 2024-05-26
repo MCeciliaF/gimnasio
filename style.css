@@ -77,12 +77,12 @@ header {
   color: #ffffff;
   text-transform: uppercase;
   background: linear-gradient(
-      90deg,
-      rgba(245,99,72,1) 0%,
-      rgba(254,140,32,1) 100%
+    90deg,
+    rgba(245, 99, 72, 1) 0%,
+    rgba(254, 140, 32, 1) 100%
   );
   border-radius: 5px;
-  
+
   /*
   border: 2px solid #ff783b;
   border-radius: 4px;
@@ -94,7 +94,7 @@ header {
 }
 .boton-header:hover {
   color: #000;
-  box-shadow: 20px 15px 25px  rgb(253, 148, 56) inset;
+  box-shadow: 20px 15px 25px rgb(253, 148, 56) inset;
   /*
   color: #d4d4d4;
   background-color: #f56349;*/
@@ -113,13 +113,22 @@ header .header-title {
 .header-title h1 {
   font-size: 5em;
   color: #ff783b;
+  padding: 30px;
+}
+.header-title .txt-1 {
+  font-size: 23px;
 }
 .header-title p {
   color: #d4d4d4;
   font-size: 18px; /*2rem*/
-  padding-bottom: 20px;
+  line-height: 30px;
 }
-
+.txt-1 {
+  margin-bottom: 0;
+}
+.txt-2 {
+  margin-top: 10px;
+}
 /* Nuestras Instalaciones */
 .container-service {
   background-color: #191a1f;
@@ -130,10 +139,10 @@ header .header-title {
   padding: 40px 30px;
 }
 .presentation h3,
-.service-container > .service-title,
+.service-title,
 #clases,
 #nosotros {
-  color: #d4d4d4;
+  color: #ffffff;
   font-size: 2em;
   text-align: center;
   padding: 30px 40px;
@@ -144,6 +153,11 @@ header .header-title {
 .nosotros-index {
   width: 85%;
   margin: 0 auto;
+}
+
+.txt-service {
+  width: 80%;
+  margin: auto;
 }
 .nosotros-index {
   display: flex;
@@ -166,18 +180,7 @@ header .header-title {
   height: 60vh;
 }
 .txt-nosotros {
-  margin-top: 180px;
-}
-.icon-nosotros {
-  border: solid 1px #ff783b;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  margin: 50px auto;
-  padding: 17px;
-}
-.fa-solid {
-  color: #ff783b;
+  margin-top: 40vh;
 }
 .nosotros-history a {
   margin: 30px auto;
@@ -191,7 +194,7 @@ header .header-title {
   overflow: hidden;
   border: none;
   border-radius: 20px;
-  box-shadow: 5px 5px 10px 1px #000000;
+  box-shadow: 5px 5px 10px 1px #f3ad18e4;
 }
 
 .slider ul {
@@ -211,7 +214,6 @@ header .header-title {
   text-align: center;
   padding: 0 200px 40px;
   top: 200px;
-  display: none;
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.6);
 }
@@ -221,7 +223,9 @@ header .header-title {
 .texto h2 {
   font-size: 45px;
   margin: auto;
+  color: #ffffff;
 }
+
 .slider img {
   width: 100%;
   height: 100%;
@@ -391,56 +395,36 @@ header .header-title {
   display: flex;
   flex-direction: column;
 }
+.nosotros-index b {
+  color: #f3ad18e4;
+}
+
+#btn-nosotros {
+  width: auto;
+  margin: 30px auto;
+}
 figure {
   width: 100%;
   margin: auto;
 }
 
-/* Servicios */
-/* clases */
-.cards {
-  background-color: #191a1f;
+/*  */
+.section-unirse {
+  background-color: #f3ad18e4;
+  width: 100%;
+  height: 20vh;
+  padding: 30px;
 }
-.box-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
-  gap: 15px;
-}
-.box-container .box {
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
-  border-radius: 5px;
-  background: transparent;
+.unirse {
   text-align: center;
-  padding: 30px 20px;
+  margin: 10px;
+  padding: auto;
 }
-.box-container .box img {
-  height: 200px;
-}
-.box-container .box h3 {
-  color: #fff;
-  font-size: 22px;
-  padding: 10px 0;
-}
-.box-container .box p {
-  color: #777;
-  font-size: 15px;
-  line-height: 1.8;
-}
-.box-container .box .btn {
-  margin-top: 10px;
-  display: inline-block;
-  background: #333;
-  color: #fff;
-  font-size: 17px;
-  border-radius: 5px;
-  padding: 8px 25px;
-}
-.box-container .box .btn:hover {
-  letter-spacing: 1px;
-}
-.box-container .box:hover {
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-  transform: scale(1.03);
+.unirse p,
+h2 {
+  height: auto;
+  font-size: 2em;
+  color: #191a1f;
 }
 
 /*-------- FOOTER---------*/
@@ -499,7 +483,7 @@ figure {
   #menu:checked ~ .navbar {
     display: initial;
   }
-  .logo{
+  .logo {
     width: 100px;
   }
   .header-title {
@@ -511,26 +495,49 @@ figure {
   .txt-2 {
     display: none;
   }
+
+  /* Slider */
+  .slider {
+    width: 90vw;
+    height: 50vh;
+  }
+  .texto {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+  }
+  .texto h2 {
+    font-size: 1.3em;
+    color: #ffffff;
+  }
+  .texto p {
+    display: none;
+  }
   /* Service */
   .service-title,
-  .presentation h3,
-  #nosotros {
+  .presentation > h3,
+  #nosotros,
+  #clases {
     font-size: 1.4em;
+    background-color: #f3ad18e4;
   }
 
   .txt-2,
   .txt-service {
     display: none;
   }
+
   .nosotros-history {
-    height:auto;
+    height: 35vh;
+    margin-bottom: 30px;
   }
+
   .nosotros-history p {
-    margin-top: 50px;
-    margin-bottom: 10px;
-    font-size: 14px;
+    margin: 5vh;
+    font-size: 16px;
     height: auto;
   }
+
   .cards-flip {
     display: flex;
     flex-wrap: wrap;
@@ -538,9 +545,8 @@ figure {
   figure {
     display: none;
   }
-  .box {
-    width: 80%;
-    align-items: flex-start;
+  .section-unirse {
+    height: 100%;
   }
 
   .footer {
@@ -549,10 +555,10 @@ figure {
   }
   .footer-content {
     flex-direction: column;
-    text-align: center;        
+    text-align: center;
   }
   .footer .link-redes {
-    justify-content:  center;
+    justify-content: center;
   }
   .footer .links {
     padding: 0 20px;
@@ -564,9 +570,17 @@ figure {
   }
   .header-title {
     width: 60vw;
+    top: 60px;
   }
   .header-title h1 {
     display: none;
+  }
+
+  .txt-1 {
+    padding-top: 80px;
+  }
+  .txt-2 {
+    margin-top: 10px;
   }
   .header-title p {
     font-size: 1.2em;
@@ -575,9 +589,20 @@ figure {
     display: flex;
     flex-wrap: wrap;
   }
+  .slider {
+    width: 90%;
+  }
+  .texto {
+    margin: auto;
+    padding: 10px auto;
+  }
+  .texto p {
+    font-size: 1.3rem;
+    width: 100%;
+  }
 
   .nosotros-history p {
-    margin-top: 50px;
+    margin: 25vh auto;
     font-size: 25px;
     height: 400px;
   }
@@ -585,12 +610,13 @@ figure {
     width: 95%;
     align-items: flex-start;
   }
-
 }
 
-@media screen and (min-width: 1021) and (max-width: 1440px) {
+@media screen and (min-width: 1021) {
   .cards-flip {
     font-size: 16px;
   }
+  .section-unirse p {
+    padding: auto;
+  }
 }
-

@@ -18,6 +18,9 @@ img {
     max-width: 100%;
     height: auto;
 }
+a {
+    text-decoration: none;
+}
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -363,7 +366,7 @@ button {
 .footer {
     padding: 40px 0 10px;
     background-color: #000;
-    height: 200px;
+    height: 220px;
 }
 .footer-content {
     display: flex;
@@ -459,7 +462,7 @@ button {
     }   
     .footer {
         padding: 30px;
-        height: 450px;
+        height: 530px;
     }
     .footer-content {
         flex-direction: column;

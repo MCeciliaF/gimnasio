@@ -142,16 +142,15 @@ header {
 }
 .footer-copy {
     text-align: center;
-
 }
-
-
 
 /*----CONTACTO----*/
 .Titulo {
-    background: linear-gradient(to bottom, rgb(32, 32, 27), white);
+    /*background: linear-gradient(to bottom, rgb(32, 32, 27), white);
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 50px;*/
+    background: rgba(255, 189, 89);
+    text-align: center;
 }
 
 .Titulo h1, .ubicaciones h1 {
@@ -166,11 +165,14 @@ header {
     text-align: center;
     max-width: 80%;
     margin: 0 auto;
+    padding-bottom: 30px;
 }
 
 .Contacto {
-    background: linear-gradient(to bottom, white, rgb(32, 32, 27));
+    background: black;
     padding-bottom: 20px;
+    /*background: linear-gradient(to bottom, white, rgb(32, 32, 27));
+    padding-bottom: 20px;*/
 }
 
 .Contacto .contenedorI {
@@ -307,13 +309,12 @@ legend {
 .ubicacion table td {
     padding: 8px;
 }
-
 .map {
     width: 250px;
     height: 200px;
     border: 1px solid #ddd;
     padding-top: 250px;
-}
+} 
 
 /*la parte responsive*/
 @media (max-width: 768px) {
