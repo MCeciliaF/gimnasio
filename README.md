@@ -1,6 +1,7 @@
 # Title
 
 FITZONE 
+https://github.com/MCeciliaF/gimnasio
 Curso codo a codo 2024
 
 Somos la comisión 24139 - Grupo N°18 
@@ -51,4 +52,4 @@ Es una página web destinada para el gimnasio FitZone, el cual es un centro depo
 
 
 ## Screenshots
-https://github.com/MCeciliaF/gimnasio/blob/master/image-1.png
+https://github.com/MCeciliaF/gimnasio/tree/master/Imagenes_pagina
