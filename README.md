@@ -1,4 +1,5 @@
 Curso codo a codo 2024
+<<<<<<< HEAD
 # Title
 
 FITZONE 
@@ -63,5 +64,17 @@ Give a ⭐️ if you like this project!
 
 ## Screenshots
 
+=======
+Somos la comisión 24139 - Grupo N°18 -Proyecto: Fitzone 
+Integrantes:
+Segura Marisa Estela - Inicio
+seguramarisae@gmail.com
+Cufré Patricia Andrea  - Nosotros
+yemnis@gmail.com
+Maria Cecilia Ferreyra - Servicios
+ceciferre@gmail.com
+Michael Douglas Ruiz Tovar - Contacto  - Api usada geolocalización google
+michaelruiztovar@gmail.com
+>>>>>>> 1b14fa95e02e68df42975720963a9eaf744c7e0a
 
 
