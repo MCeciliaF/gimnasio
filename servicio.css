@@ -366,7 +366,7 @@ button {
 .footer {
     padding: 40px 0 10px;
     background-color: #000;
-    height: 220px;
+    height: 230px;
 }
 .footer-content {
     display: flex;
@@ -387,7 +387,7 @@ button {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-    
+    padding: 0;
 }
 .link a:hover {
     color: #f56349;
