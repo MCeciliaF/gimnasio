@@ -160,7 +160,7 @@ header {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: 1fr;
-    border-radius: 10px;
+    /*border-radius: 10px;*/
 }
 .instructores-content {    
     grid-column-start: 2;
