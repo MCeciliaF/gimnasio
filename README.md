@@ -14,7 +14,7 @@ Es una página web destinada para el gimnasio FitZone, el cual es un centro depo
 
 Link a URL navegable Netlify
 
-https://6653c84f4b92a6f37591a25d--bright-hummingbird-86748d.netlify.app/
+https://66577ea4be0c9e276a3b8375--serene-puffpuff-f16570.netlify.app/
 
 ## Built With
 
