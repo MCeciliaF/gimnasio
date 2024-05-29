@@ -1,7 +1,8 @@
 # Title
 
 FITZONE 
-Curso codo a codo 2024
+
+https://github.com/MCeciliaF/gimnasio
 
 Somos la comisión 24139 - Grupo N°18 
  
@@ -11,6 +12,9 @@ Es un proyecto a modo de ejercitación y entrega para el curso dictado por  Codo
 
 Es una página web destinada para el gimnasio FitZone, el cual es un centro deportivo destinado a todas aquellas personas que desean mejorar su estado fisico y mental.
 
+Link a URL navegable Netlify
+
+https://6653c84f4b92a6f37591a25d--bright-hummingbird-86748d.netlify.app/
 
 ## Built With
 
@@ -51,4 +55,4 @@ Es una página web destinada para el gimnasio FitZone, el cual es un centro depo
 
 
 ## Screenshots
-https://github.com/MCeciliaF/gimnasio/blob/master/image-1.png
+https://github.com/MCeciliaF/gimnasio/tree/master/Imagenes_pagina
