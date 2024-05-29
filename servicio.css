@@ -176,8 +176,6 @@ hr {
     transition: all 400ms ease;
     overflow: hidden;
     /*grid-auto-flow: dense;*/
-    
-
 }
 .servicio .servicio-content .servicio-1:hover {
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
@@ -203,6 +201,7 @@ hr {
     color: #777;
     font-size: 14px;
     line-height: 1.8;
+    margin: 0;
 }
 button {
     width: 180px;
@@ -242,23 +241,23 @@ button {
     transition: .2s ease;    
 }
 .btn-1::after {
-    content: 'mar, jue y vie 10, 15 y 19hs';
+    content: 'Mar, Jue y Vie 10, 15 y 19hs';
     
 }
 .btn-2::after {
-    content: 'mar, jue y sab 9, 11, 18 y 21hs';
+    content: 'Mar, Jue y Sab 9, 18 y 21hs';
 }
 
 .btn-3::after {
-    content: 'lun, mie y sab 13, 17, 20 y 22hs';
+    content: 'lun, Mie y Sab 13, 17 y 22hs';
 }
 
 .btn-4::after {
-    content: 'mar, jue y sab 10, 13, 18 y 20hs';
+    content: 'Mar, Jue y Sab 10, 18 y 20hs';
 }
 
 .btn-5::after {
-    content: ' Lun, mie y vie 9, 13 y 18hs';
+    content: 'Lun, Mie y Vie 9, 13 y 18hs';
 }
 
 .btn-6::after {
@@ -370,7 +369,7 @@ button {
 }
 .footer-content {
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 .link h3 {
@@ -454,12 +453,11 @@ button {
         margin-bottom: 30px;
     }
     .contact {
-        background-position: top left;
-        
+        background-position: top left;        
     }
-    .contac .contac_content h2 {
-        font-size: 16px;
-    }   
+    .servicio .servicio-content {
+        width: 85%;
+    }
     .footer {
         padding: 30px;
         height: 530px;
@@ -483,6 +481,7 @@ button {
     .testimonial-1 {
         margin: 0 25px;
     }
+
     .footer-content {
         padding: 0 60px;
     }
